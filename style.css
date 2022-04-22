@@ -321,8 +321,24 @@ body {
 }
 
 .main {
-    margin-left: 8px;
-    margin-right: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 96px;
+}
+
+@media(min-width: 768px) {
+    .main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
 }
 
 
@@ -352,6 +368,22 @@ body {
     row-gap: 16px;
 
 }
+
+@media(min-width: 768px) {
+    .feturedItems {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 18px;
+        column-gap: 16px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .feturedItems {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
 
 .feturedBlock {
     background: rgba(248, 248, 248, 1);
@@ -425,4 +457,24 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+}
+
+.feturedBrowseBtn {
+    border: 1px solid #FF6A6A;
+    margin-top: 40px;
+    padding: 15px 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    color: #F26376;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.feturedBrowseBtn:hover {
+    color: white;
+    background: #FF6A6A;
+
 }
