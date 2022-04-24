@@ -478,3 +478,57 @@ body {
     background: #FF6A6A;
 
 }
+
+
+.services {
+    background: #222224;
+    padding-top: 48px;
+    padding-bottom: 81px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+@media(min-width: 1600px) {
+
+    .services {
+        padding-top: 48px;
+        padding-bottom: 81px;
+    }
+}
+
+.services .container {
+    display: grid;
+    gap: 46px;
+}
+
+@media(min-width: 1600px) {
+
+    .services .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 46px;
+    }
+}
+
+.footerBlock {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerTopTitle {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.footerTopText {
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+
+    max-width: 340px;
+}
