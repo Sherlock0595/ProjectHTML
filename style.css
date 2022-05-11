@@ -386,6 +386,18 @@ body {
     }
 }
 
+@media(min-width: 768px) {
+    .feturedBlock_collection {
+        display: none;
+    }
+}
+
+@media(min-width: 1600px) {
+    .feturedBlock_collection {
+        display: block;
+    }
+}
+
 
 .feturedBlock {
     background: rgba(248, 248, 248, 1);
@@ -1084,4 +1096,129 @@ body {
 
 .rigthArrowHover:hover path {
     fill: #EF5B70;
+}
+
+.collection {
+    padding: 64px 24px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 64px;
+    background: white;
+}
+
+@media(min-width: 768px) {
+    .collection {
+        margin-bottom: 129px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .collection {
+        margin-top: -64px;
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.collectionTitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 12px;
+}
+
+.collectionDividerPink {
+    height: 3px;
+    width: 63px;
+    background: #EF5B70;
+    margin: 0px auto 12px;
+}
+
+.collectionDesk {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.collectionText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143.1%;
+    text-align: center;
+    color: #5E5E5E;
+    max-width: 326px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:768px) {
+    .collectionText {
+        min-width: 555px;
+    }
+}
+
+
+
+.collectionCeller {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    color: #EF5B70;
+    text-align: center;
+    margin: 31px 0;
+}
+
+.collectionDividerGrey {
+    width: 175px;
+    height: 1px;
+    background: #EAEAEA;
+    margin: 0px auto 48px;
+}
+
+@media(min-width:768px) {
+    .collectionDividerGrey {
+        width: 642px;
+    }
+}
+
+.collectionSizes {
+    font-size: 10px;
+    line-height: 12px;
+    color: #6F6E6E;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 304px;
+}
+
+.collectionSizes img {
+    margin-left: 10px;
+}
+
+.collectionButton {
+    background: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    padding: 15px 24px;
+    width: 212px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.collectionButton img {
+    margin-right: 23px;
 }
