@@ -1018,3 +1018,70 @@ body {
 .pagination a:hover {
     color: #EF5B70;
 }
+
+.slider {
+    min-height: 624px;
+    background: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    position: relative;
+}
+
+@media(min-width:1600px) {
+    .slider {
+        min-height: 777px;
+    }
+}
+
+.sliderImage {
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+@media(min-width:768px) {
+    .sliderImage {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:1600px) {
+    .sliderImage {
+        margin-top: 11px;
+    }
+}
+
+.sliderLeftArrow,
+.sliderRigthArrow {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.15);
+    position: absolute;
+    top: calc(50% - 47px / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.sliderLeftArrow {
+    left: 0;
+
+}
+
+.sliderRigthArrow {
+    right: 0;
+}
+
+
+.leftArrowHower:hover path {
+    fill: #EF5B70;
+}
+
+.rigthArrowHover:hover path {
+    fill: #EF5B70;
+}
