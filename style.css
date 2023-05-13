@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+
 body {
     margin: 0;
     font-family: Lato, sans-serif;
@@ -477,4 +478,230 @@ body {
     color: white;
     background: #FF6A6A;
 
+}
+
+
+.services {
+    background: #222224;
+    padding-top: 48px;
+    padding-bottom: 81px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+@media(min-width: 1600px) {
+
+    .services {
+        padding-top: 48px;
+        padding-bottom: 81px;
+    }
+}
+
+.services .container {
+    display: grid;
+    gap: 46px;
+}
+
+@media(min-width: 1600px) {
+
+    .services .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 46px;
+    }
+}
+
+.footerBlock {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerTopTitle {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.footerTopText {
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    max-width: 340px;
+}
+
+.subscribe {
+    background: url(images/subscribeBack.png) no-repeat;
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 109px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.subscribe .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 59px;
+}
+
+@media(min-width: 1600px) {
+    .subscribe .container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+        column-gap: 223px;
+    }
+}
+
+.subscribeUserText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222224;
+    padding-top: 29px;
+    max-width: 330px;
+    margin: auto;
+}
+
+.subscribeTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 153.2%;
+    color: #222224;
+}
+
+.subscribeText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 153.2%;
+    color: #222224;
+    padding-bottom: 22px;
+}
+
+.rightscribe {
+    margin: auto;
+}
+
+.subscribeForm button,
+.subscribeForm input {
+    border: none;
+    height: 47px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.subscribeForm input {
+    background: #E1E1E1;
+    border: none;
+    padding: 6px 21px;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    float: left;
+
+}
+
+.subscribe button {
+    padding: 7px;
+    float: left;
+    color: #FFFFFF;
+    background: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+
+}
+
+.subscribeForm input::-webkit-input-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+
+.subscribeForm input::-moz-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+
+.subscribeForm input:-ms-input-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+
+.subscribeForm input:-moz-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+
+.footer {
+    background: #222224;
+    padding: 43px 23px 10px;
+}
+
+@media(min-width: 768px) {
+    .footer {
+        background: #222224;
+        padding: 24px 32px;
+    }
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(min-width: 768px) {
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer a {
+    color: #000000;
+    background: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.allrights {
+    color: #FBFBFB;
+    padding-top: 40px;
+    padding-bottom: 9px;
+}
+
+.rigthFooter {
+    display: flex;
+}
+
+@media(max-width: 767px) {
+    .rigthFooter {
+        margin-top: 40px;
+    }
+}
+
+
+.footer a:hover {
+    background: #F16D7F;
+    color: white;
+}
+
+.footer a:not(:last-child) {
+    margin-right: 7px;
 }
